@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SnapDownload helps you save media files you own or have permission to download.">
+  <meta name="theme-color" content="#101827">
+  <title>SnapDownload — Legal Media Downloads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SnapDownload home"><span class="brand-mark">S</span> SnapDownload</a>
+    <a class="top-link" href="#how">How it works</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">SIMPLE · SAFE · PERMISSION-BASED</div>
+      <h1>Save media you’re <span>allowed</span> to download.</h1>
+      <p class="intro">Paste a direct media-file link below. Use this tool only for files you own, public-domain media, or content whose creator has given you permission to download.</p>
+
+      <form id="download-form" class="download-card">
+        <label for="media-url">Direct media file URL</label>
+        <div class="input-row">
+          <input id="media-url" type="url" placeholder="https://example.com/my-video.mp4" autocomplete="url" required>
+          <button type="submit">Open download</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite">Supported examples: direct .mp4, .webm, .mp3 or other file links.</p>
+      </form>
+
+      <div class="platforms" aria-label="Supported source types">
+        <span>Creator-provided links</span><span>Public-domain files</span><span>Your own media</span>
+      </div>
+    </section>
+
+    <section class="info-grid" id="how">
+      <article class="info-card">
+        <div class="number">01</div>
+        <h2>Copy an authorized file link</h2>
+        <p>Get the direct file URL from the creator, your own storage, or a source that clearly permits downloading.</p>
+      </article>
+      <article class="info-card">
+        <div class="number">02</div>
+        <h2>Paste the link</h2>
+        <p>Paste the direct media-file address into the box above. A normal social post URL is not a direct file link.</p>
+      </article>
+      <article class="info-card">
+        <div class="number">03</div>
+        <h2>Open the file</h2>
+        <p>Your browser opens the file address. Use the browser’s download option when the source makes the file downloadable.</p>
+      </article>
+    </section>
+
+    <section class="notice">
+      <h2>Important: respect creators’ rights</h2>
+      <p>SnapDownload does not extract videos from YouTube, TikTok, Facebook or Instagram, bypass platform restrictions, or remove DRM. Download only when you own the content or have clear permission and the source’s terms allow it.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> SnapDownload</span>
+    <span>Built for lawful, permission-based downloads.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
